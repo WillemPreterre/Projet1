@@ -49,7 +49,7 @@ header {
 .logo {
     position: absolute;
     left: 250px;
-    margin: 50px;
+    margin: 45px;
 
 }
 /* -----------------------------------
@@ -88,3 +88,16 @@ header {
     top: 430px;
 }
 
+.salarie {
+    border: red solid 1px;
+    margin-top: 70px;
+    margin-right: 400px;
+    margin-left: 400px;
+    height: 230px;
+    line-height: 60px;
+    background-color: rgba(238, 237, 237, 0.986);
+}
+
+/* Mettre un espace entre le tabealu et les lignes 
+
+mettre prénom date de naissance t ode pcs à droite
