@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet</title>
     <link href="css/index.css" rel="stylesheet">
+    <link href="img/bg_site.jpg" rel="stylesheet">
 </head>
 <body> 
-    <div class="header">
+    <div class="header-site">
         <img class="logo" src="img/logo_santraplus.png">
         <header>
-            <span class="header_top">
-                Formulaire à adresser par courrier, fax ou e-mail
+        <div class="header-all">
+            <span class="header-top">
+                Formulaire à adresser par courrier, fax ou e-mail :
             </span>
             <span class="sous-titre">planning@santraplus.fr
-            </span>
-        <div class="header-bottom">
-            <span class="start">Planning Santra Plus -</span>
-            <span>CS 20874 - 76087</span>
+            </span><br>
+
+       <!-- <div class="header-bottom"> -->
+            <span class="start">planning santra plus </span>
+            <span>- CS 20874 - 76087</span>
             <span>Le Havre CEDEX - Fax : 02 32 74 51 20</span>
+     <!--   </div> -->
         </div>
         </header>
     </div>
@@ -28,7 +32,22 @@
                 <form action="" method="POST">
                     <div class="reference">
                         <h3>Vos références</h3>
-                        <label for="name"></label>
+                        <span>Raison sociale</span>
+                        <label for="num-adherant">N° d'adhérent</label>
+                        <input type="text" id="num-adherant" name="numero-adherant"
+                        placeholder="...">
+                    <p> 
+                        <label for="name-applicant">Nom du demandeur</label>
+                        <input type="text" id="name-applicant" name="applicant-name" placeholder="...">
+                    </p>
+                        <div class="reference-bottom">
+                            <label for="tel-applicant">Tel</label>
+                            <input type="text" id="tel-applicant" name="tel-applicant" placeholder="...">
+                            <label for="fax-applicant">Fax</label>
+                            <input type="text" id="fax-applicant" name="fax-applicant" placeholder="...">
+                            <label for="mail-applicant">Fax</label>
+                            <input type="text" id="mail-applicant"  name="mail-applicant" placeholder="...">
+                        </div>   
                     </div>
                 </form>
             </div>

@@ -4,10 +4,71 @@
 
 body {
     background-image: url(https://santraplus.fr/modeles_graphiques/img/bg_site.jpg);
+    background-color: white;
+}
+
+/* --------------------------------------------
+
+            @@@ HEADER 
+
+---------------------------------------------*/
+header {
+    font-family:Arial,sans-serif ;
+    border: red solid 1px;
+    height: 130px;
+}
+
+.header-site {
+    position: relative;
+    line-height: 40px;
+}
+
+.header-all {
+    position: absolute;
     text-align: center;
+    font-size: 20px;
+    left: 650px ;
+    margin: 30px;
 }
+
+
+.header-top {
+    font-size: 25px;
+    text-transform: capitalize ;
+    font-weight: 550;
+    color: rgb(0, 146, 182);
+}
+
+.start {
+    font-weight: 550;
+    text-transform: capitalize;
+    color: rgb(0, 146, 182);
+
+}
+
 .logo {
-    
+    position: absolute;
+    left: 250px;
+    margin: 50px;
+
+}
+/* -----------------------------------
+
+        @@@Main
+
+----------------------------------- */
+.main {
+    border: solid red 1px;
+    height: 200px   ;
+    margin-top: 70px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: rgba(238, 237, 237, 0.986);
+    line-height: 40px;
 }
 
 
+
+.top-main {
+    border-color: 1px solid red;
+}
