@@ -57,7 +57,7 @@ header {
         @@@Main
 
 ----------------------------------- */
-.main {
+.reference {
     border: solid red 1px;
     height: 200px   ;
     margin-top: 70px;
@@ -69,6 +69,22 @@ header {
 
 
 
-.top-main {
-    border-color: 1px solid red;
+#name-applicant {
+    border-color: 1px solid  white;
 }
+
+/* -------------------------------
+        @@@ Main 2eme partie
+    ---------------------------*/
+
+.attention {
+    position: absolute;
+    color: red;
+    text-decoration: underline 2px;
+    font-weight: bold;
+    text-align: center;
+    left:700px;
+    font-size: 20px;
+    top: 430px;
+}
+
