@@ -14,7 +14,7 @@ body {
 ---------------------------------------------*/
 header {
     font-family:Arial,sans-serif ;
-    border: red solid 1px;
+    border: black solid 1px;
     height: 130px;
 }
 
@@ -52,23 +52,41 @@ header {
     margin: 45px;
 
 }
+.reference,
+.salarie {
+    padding: 10px;
+}
 /* -----------------------------------
 
         @@@Main
 
 ----------------------------------- */
 .reference {
-    border: solid red 1px;
+    border: solid black 1px;
     height: 200px   ;
     margin-top: 70px;
     margin-left: 400px;
     margin-right: 400px;
     background-color: rgba(238, 237, 237, 0.986);
     line-height: 40px;
+    line-height: 50px;
 }
 
+label[for="num-adherant"] {
+    margin-left: 680px;
+}
 
+label[for="tel-applicant"] {
+    margin-left: 105px;
+}
 
+label[for="fax-applicant"] {
+    margin-left: 200px;
+
+}
+label[for="mail-applicant"] {
+    margin-left: 150px;
+}
 #name-applicant {
     border-color: 1px solid  white;
 }
@@ -86,10 +104,11 @@ header {
     left:700px;
     font-size: 20px;
     top: 430px;
+    line-height: 50px;
 }
 
 .salarie {
-    border: red solid 1px;
+    border: black solid 1px;
     margin-top: 70px;
     margin-right: 400px;
     margin-left: 400px;
@@ -98,6 +117,25 @@ header {
     background-color: rgba(238, 237, 237, 0.986);
 }
 
+label[for="first-name"]{
+    margin-left: 250px ;
+
+}
+label[for="birthday"] {
+    margin-left: 185px ;
+
+}
+label[for="code-pcs"] {
+
+    margin-left: 235px ;
+}
+
+label[for="marital-name"] {
+    margin-left:  35px;
+}
+label[for="workspace"] {
+    margin-left: 15px;
+}
 /* Mettre un espace entre le tabealu et les lignes 
 
 mettre prénom date de naissance t ode pcs à droite
