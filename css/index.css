@@ -1,3 +1,105 @@
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "vide-left logo titre titre titre vide-right"
+    
+    "vide-left reference reference reference reference vide-right"
+    
+    "vide-left salarie salarie salarie salarie vide-right"
+    
+    "vide-left information information information information vide-right"
+    
+    "vide-left information information information  information  vide-right"
+    
+    "vide-left rdv rdv rdv rdv vide-right"
+    
+    "vide-left cancel cancel cancel cancel vide-right" 
+    ;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: peru;
+}
+.vide-left {
+    grid-area: vide-left;
+    background-color: red;
+}
+.vide-right {
+    grid-area: vide-right;
+    background-color: yellow;
+}
+.titre {
+    grid-area: titre;
+    background-color: blue;
+}
+.reference {
+    grid-area: reference;
+    background-color: violet;
+}
+.salarie {
+    grid-area: salarie;
+    background-color: pink;
+}
+.information {
+    grid-area: information;
+    background-color: green;
+}
+.rdv {
+    grid-area: rdv;
+    background-color: aqua;
+}
+.cancel {
+    grid-area: cancel;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------
+
+            @@@ HEADER 
+
+---------------------------------------------*/
+/*
 * {
     margin: 0;
 }
@@ -7,13 +109,8 @@ body {
     background-color: white;
 }
 
-/* --------------------------------------------
-
-            @@@ HEADER 
-
----------------------------------------------*/
 header {
-    font-family:Arial,sans-serif ;
+    font-family:Arial,sans-serif ; 
     border: black solid 1px;
     height: 130px;
 }
@@ -61,12 +158,12 @@ header {
         @@@Main
 
 ----------------------------------- */
-.reference {
+/*.reference {
     border: solid black 1px;
     height: 200px   ;
     margin-top: 70px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
     background-color: rgba(238, 237, 237, 0.986);
     line-height: 40px;
     line-height: 50px;
@@ -94,7 +191,7 @@ label[for="mail-applicant"] {
 /* -------------------------------
         @@@ Main 2eme partie
     ---------------------------*/
-
+/*
 .attention {
     position: absolute;
     color: red;
@@ -110,10 +207,10 @@ label[for="mail-applicant"] {
 .salarie {
     border: black solid 1px;
     margin-top: 70px;
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-right: 200px;
+    margin-left: 200px;
     height: 230px;
-    line-height: 60px;
+    line-height: 49px;
     background-color: rgba(238, 237, 237, 0.986);
 }
 
@@ -136,6 +233,43 @@ label[for="marital-name"] {
 label[for="workspace"] {
     margin-left: 15px;
 }
-/* Mettre un espace entre le tabealu et les lignes 
 
-mettre prénom date de naissance t ode pcs à droite
+
+/*---------------------------------------
+
+   @@@ Main 3eme partie 
+
+   --------------------------------------*/
+
+/* main a revoir deux main 
+
+si result est nécessaire sur tous les suivi individuel simple*/
+/*
+.information {
+    border: black 1px solid;
+    margin-left: 200px;
+    margin-top: 70px;
+    margin-right: 200px;
+    height: 500px;
+    line-height: 49px;
+    background-color: rgba(238, 237, 237, 0.986);
+}
+
+.information {
+    padding: 10px;
+}
+
+
+.information-premiere {
+    border: red 1px solid;
+
+
+}
+.information-premiere span:nth-child(2) {
+    margin-left: 100px;
+}
+.information-premiere span:nth-child(1) {
+    color: rgb(0, 146, 182);
+    font-size: 22px;
+    text-align: center;
+}
