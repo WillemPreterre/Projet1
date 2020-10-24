@@ -54,154 +54,178 @@
             </form>
         </div>
 
-        <div class="box salarie"></div>
-        <div class="box information">c</div>
-        <div class="box rdv">d</div>
-        <div class="box cancel">e</div>
-        <!--<div class="main">
-        <main>
-            <div class="top-main">
+        <div class="box salarie">
+            <form action="" method="POST">
+                <h3>Le salarié</h3>
+                <span>Civilité :</span>
+                <label for="gender">Monsieur</label>
+                <input type="radio" id="gender" name="gender">
+                <label for="gender">Madame</label>
+                <input type="radio" id="gender" name="gender">
+                <p>
+                    <label for="name">Nom de naissance</label>
+                    <input type="text" id="name" name="name" placeholder="...">
+
+                    <label for="first-name">Prénom</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="...">
+                </p>
+                <label for="marital-name">Nom marital</label>
+                <input type="text" id="marital-name" name="marital-name" placeholder="...">
+
+                <label for="birthday">Date de naissance</label>
+                <input type="text" id="birthday" name="birthday" placeholder="...">
+                <p>
+                    <label for="workspace">Poste de travail</label>
+                    <input type="text" id="workspace" name="workspace" placeholder="...">
+
+                    <label for="code-pcs">Code PCS</label>
+                    <input type="text" id="code-pcs" name="code-pcs" placeholder="...">
+                </p>
+            </form>
+        </div>
+
+        <div class="box information">
+            <div class="information-premiere">
                 <form action="" method="POST">
-                    <div class="reference">
-                        
+                    <h3>Informations complémentaires pour créationn nouveau salarié</h3>
+                    <p>
+                        <label for="embauche-date">Date d'embauche :</label>
+                        <input type="text" name="embauche-date" id="embauche-date" placeholder="...">
 
+                        <label for="contrat-type">Type de contrat(CDD,CDI,apprenti...)</label>
+                        <input type="text" name="contrat-type" id="contrat-type" placeholder="...">
+                    <p>
+                        <label for="cdd">Pour les CDD,date de fin de contrat</label>
+                        <input type="text" name="css" id="cdd" placeholder="...">
+                    </p>
+                    <span>Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour
+                        votre entreprise ou pour uen autre entreprise</span>
+                    <label for="choice-employe">Oui</label>
+                    <input type="radio" name="choice-employe" id="choice-employe">
+                    <label for="choice-employe">Non</label>
+                    <input type="radio" name="choice-employe" id="choice-employe">
+                    <p>
+                        <span>Catégorie suivant les surveillances </span>
+                        <span>: Cocher la ou les correspondants</span>
+                    </p>
+                    </p>
+            </div>
+            <div class="information-deuxieme">
+                <form action="" method="POST">
+                    <div class="si">suivi individuel simple (SI)
+                        <label for="si-cas">Cas général hors risque particulier.</label>
+                        <input type="checkbox" id="si-cas" name="si-result">
 
-                        </div>
+                        <label for="si-groupe">Salarié exposé aux agents biologiques groupe 2 (AB2)</label>
+                        <input type="checkbox" id="si-groupe" name="si-result">
+
+                        <label for="si-dixhuit">Moins de 18 ans non affecté à travaux réglementés.</label>
+                        <input type="checkbox" id="si-dixhuit" name="si-result">
+
+                        <label for="">salarié esposé aux champs électromagétiques si VLE dépassée</label>
+                        <input type="checkbox" id="" name="si-result">
+                    </div>
+
+                    <div class="sia">suivi individuel adapté (SIA)
+                        <label for="sia-nuit">Travail de nuit</label>
+                        <input type="checkbox" id="sia-nuit" name="sia-result"> <label for="sia-handicape">Travail
+                            handicapé</label>
+                        <input type="checkbox" id="sia-handicape" name="sia-result"> <label
+                            for="sia-titulaire">Travailleur titulaire d'une pension d'invalidité</label>
+                        <input type="checkbox" id="sia-titulaire" name="sia-result"> <label for="sia-femme">Femme
+                            enceinte, allaitante ou venant d'accoucher</label>
+                        <input type="checkbox" id="sia-femme" name="sia-result">
+                    </div>
+                    <div class="sir">suivi individuel renforcé (SIR) :
+
+                        <label for="sir-amiant">Salarié esposé à l'amiante</label>
+                        <input type="checkbox" id="sir-amiant" name="sir-result">
+
+                        <label for="sir-biologique">Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et
+                            4)</label>
+                        <input type="checkbox" id="sir-biologique" name="sir-result">
+
+                        <label for="sir-rayonnement">Salarié exposé aux rayonnements ionisants Cat B</label>
+                        <input type="checkbox" id="sir-rayonnement" name="sir-result">
+
+                        <label for="sir-conduite">Autorisation de conduite</label>
+                        <input type="checkbox" id="sir-conduite" name="sir-result">
+
+                        <label for="sir-electrique">Habilitation électrique (travaux sur insatallations
+                            électriques)</label>
+                        <input type="checkbox" id="sir-electrique" name="sir-result">
+
+                        <label for="sir-cmr">Salarié exposé à CMR</label>
+                        <input type="checkbox" id="sir-cmr" name="sir-result">
+
+                        <label for="sir-plomb">Salarié exposé au plomb</label>
+                        <input type="checkbox" id="sir-plomb" name="sir-result">
+
+                        <label for="sir-hyperbare">Salarié exposé au risque Hyperbare</label>
+                        <input type="checkbox" id="sir-hyperbare" name="sir-result">
+
+                        <label for="sir-chute">Salarié exposé au risque de chute de hauteur lors <span>du montage et
+                                démontage d'échafaudage</span></label>
+                        <input type="checkbox" id="sir-chute" name="sir-result">
+
+                        <label for="sir-manutention">Manutention manuelle, port de charge>55kg (R4541-9)</label>
+                        <input type="checkbox" id="sir-manutention" name="sir-result">
+                    </div>
+                    <div class="sira">suivi individuel renforcé annuel(SIRA)
+                        <label for="sira-rayonnement">Rayonnements ionisants Cat A</label>
+                        <input type="checkbox" id="sira-rayonnement" name="sira-result">
+
+                        <label for="sira-dixhuit">Moins de 18 ans affecté à travaux réglementés</label>
+                        <input type="checkbox" id="sira-dixhuit" name="sira-result">
+
                     </div>
                 </form>
             </div>
-            <div class="main-two">
- 
-                <div class="salarie">
-                    <form action="" method="POST">
-                        <h3>Le salarié</h3>
-                        <span>Civilité :</span>
-                        <label for="gender">Monsieur</label>
-                        <input type="radio" id="gender" name="gender">
-                        <label for="gender">Madame</label>
-                        <input type="radio" id="gender" name="gender">
-                        <p>
-                            <label for="name">Nom de naissance</label>
-                            <input type="text" id="name" name="name" placeholder="...">
+        </div>
+        <div class="box rdv">
+            <form action="" method="POST">
+                <input type="checkbox" id="rdv-maternité" name="rdv-maternité">
+                <label for="rdv-maternité">Reprise après un congé de maternité</label>
 
-                            <label for="first-name">Prénom</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="...">
-                        </p>
-                        <label for="marital-name">Nom marital</label>
-                        <input type="text" id="marital-name" name="marital-name" placeholder="...">
+                <input type="checkbox" id="rdv-maladie" name="rdv-maladie">
+                <label for="rdv-maladie">Reprise après une abscence pour cause de maladie professionnelle</label>
 
-                        <label for="birthday">Date de naissance</label>
-                        <input type="text" id="birthday" name="birthday" placeholder="...">
-                        <p>
-                            <label for="workspace">Poste de travail</label>
-                            <input type="text" id="workspace" name="workspace" placeholder="...">
+                <input type="checkbox" id="rdv-absence" name="rdv-absence">
+                <label for="rdv-absence">Reprise après une abscence de + 30 jours suite :</label>
 
-                            <label for="code-pcs">Code PCS</label>
-                            <input type="text" id="code-pcs" name="code-pcs" placeholder="...">
-                        </p>
-                    </form>
-                </div>
-            </div>
+                <input type="radio" id="rdv-accident" name="rdv-accident">
+                <label for="rdv-accident">accident de travail</label>
 
-            <div class="information">
-                <div class="information-premiere">
-                    <form action="" method="POST">
-                        <h3>Informations complémentaires pour créationn nouveau salarié</h3>
-                        <p>
-                            <label for="embauche-date">Date d'embauche :</label>
-                            <input type="text" name="embauche-date" id="embauche-date" placeholder="...">
+                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+                <label for="rdv-arretmaladie">arrêt maladie</label>
 
-                            <label for="contrat-type">Type de contrat(CDD,CDI,apprenti...)</label>
-                            <input type="text" name="contrat-type" id="contrat-type" placeholder="...">
-                        <p>
-                            <label for="cdd">Pour les CDD,date de fin de contrat</label>
-                            <input type="text" name="css" id="cdd" placeholder="...">
-                        </p>
-                        <span>Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour
-                            votre entreprise ou pour uen autre entreprise</span>
-                        <label for="choice-employe">Oui</label>
-                        <input type="radio" name="choice-employe" id="choice-employe">
-                        <label for="choice-employe">Non</label>
-                        <input type="radio" name="choice-employe" id="choice-employe">
-                        <p>
-                            <span>Catégorie suivant les surveillances </span>
-                            <span>: Cocher la ou les correspondants</span>
-                        </p>
-                        </p>
-                </div>
-                <div class="information-deuxieme">
-                    <form action="" method="POST">
-                        <div class="si">suivi individuel simple (SI)
-                            <label for="si-cas">Cas général hors risque particulier.</label>
-                            <input type="checkbox" id="si-cas" name="si-result">
+                <input type="text" id="rdv-reprise1" name="rdv-reprise1">
+                <label for="rdv-reprise1">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-                            <label for="si-groupe">Salarié exposé aux agents biologiques groupe 2 (AB2)</label>
-                            <input type="checkbox" id="si-groupe" name="si-result">
+                <input type="text" id="rdv-reprise2" name="rdv-reprise2">
+                <label for="rdv-reprise2">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-                            <label for="si-dixhuit">Moins de 18 ans non affecté à travaux réglementés.</label>
-                            <input type="checkbox" id="si-dixhuit" name="si-result">
+                <input type="text" id="rdv-reprise3" name="rdv-reprise3">
+                <label for="rdv-reprise3">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-                            <label for="">salarié esposé aux champs électromagétiques si VLE dépassée</label>
-                            <input type="checkbox" id="" name="si-result">
-                        </div>
+                <input type="checkbox" id="rdv-examen" name="rdv-examen">
+                <label for="rdv-examen">Examen à la demande de l'employeur (merci de préciser le motif)</label>
+            </form>
+        </div>
+        <div class="box cancel">
+            <h3>Annuler ou reporter un rendez-vous :</h3>
+            
+            <label for="cancel-date"><span class="cancel-word">Date</span> du rendez-vous</label>
+            <input type="text" id="cancel-date" name="cancel-date">
 
-                        <div class="sia">suivi individuel adapté (SIA)
-                            <label for="sia-nuit">Travail de nuit</label>
-                            <input type="checkbox" id="sia-nuit" name="sia-result"> <label for="sia-handicape">Travail
-                                handicapé</label>
-                            <input type="checkbox" id="sia-handicape" name="sia-result"> <label
-                                for="sia-titulaire">Travailleur titulaire d'une pension d'invalidité</label>
-                            <input type="checkbox" id="sia-titulaire" name="sia-result"> <label for="sia-femme">Femme
-                                enceinte, allaitante ou venant d'accoucher</label>
-                            <input type="checkbox" id="sia-femme" name="sia-result">
-                        </div>
-                        <div class="sir">suivi individuel renforcé (SIR) :
+            <label for="cancel-name"><span class="cancel-word">Nom du</span> médecin ou infirmière</label>
+            <input type="text" id="cancelnamee" name="cancel-name">
 
-                            <label for="sir-amiant">Salarié esposé à l'amiante</label>
-                            <input type="checkbox" id="sir-amiant" name="sir-result">
-
-                            <label for="sir-biologique">Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et
-                                4)</label>
-                            <input type="checkbox" id="sir-biologique" name="sir-result">
-
-                            <label for="sir-rayonnement">Salarié exposé aux rayonnements ionisants Cat B</label>
-                            <input type="checkbox" id="sir-rayonnement" name="sir-result">
-
-                            <label for="sir-conduite">Autorisation de conduite</label>
-                            <input type="checkbox" id="sir-conduite" name="sir-result">
-
-                            <label for="sir-electrique">Habilitation électrique (travaux sur insatallations
-                                électriques)</label>
-                            <input type="checkbox" id="sir-electrique" name="sir-result">
-
-                            <label for="sir-cmr">Salarié exposé à CMR</label>
-                            <input type="checkbox" id="sir-cmr" name="sir-result">
-
-                            <label for="sir-plomb">Salarié exposé au plomb</label>
-                            <input type="checkbox" id="sir-plomb" name="sir-result">
-
-                            <label for="sir-hyperbare">Salarié exposé au risque Hyperbare</label>
-                            <input type="checkbox" id="sir-hyperbare" name="sir-result">
-
-                            <label for="sir-chute">Salarié exposé au risque de chute de hauteur lors <span>du montage et
-                                    démontage d'échafaudage</span></label>
-                            <input type="checkbox" id="sir-chute" name="sir-result">
-
-                            <label for="sir-manutention">Manutention manuelle, port de charge>55kg (R4541-9)</label>
-                            <input type="checkbox" id="sir-manutention" name="sir-result">
-                        </div>
-                        <div class="sira">suivi individuel renforcé annuel(SIRA)
-                            <label for="sira-rayonnement">Rayonnements ionisants Cat A</label>
-                            <input type="checkbox" id="sira-rayonnement" name="sira-result">
-
-                            <label for="sira-dixhuit">Moins de 18 ans affecté à travaux réglementés</label>
-                            <input type="checkbox" id="sira-dixhuit" name="sira-result">
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </main> -->
+            <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
+            <input type="text" id="cancel-report" name="cancel-report">
+        </div>
     </div>
 </body>
 

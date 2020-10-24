@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: grid;
     gap: 20px;
-    grid-template-columns: 140px 1fr 1fr 1fr 1fr 140px ;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px ;
     grid-template-rows: 1fr repeat(6, 1fr) ;
     grid-template-areas: 
     ". logo titre titre titre ."
@@ -58,7 +58,7 @@ body {
 }
 .cancel {
     grid-area: cancel;
-    background-color: black;
+    background-color: grey;
 }
 
 /* --------------------------------------------
