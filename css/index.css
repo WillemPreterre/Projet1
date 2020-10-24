@@ -1,25 +1,33 @@
+* {
+    margin: 0;
+}
 
+body {
+    background-image: url(https://santraplus.fr/modeles_graphiques/img/bg_site.jpg);
+    background-color: white;
+}
 
 .container {
     height: 100vh;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-columns: 140px 1fr 1fr 1fr 1fr 140px ;
+    grid-template-rows: 1fr repeat(6, 1fr) ;
     grid-template-areas: 
-    "vide-left logo titre titre titre vide-right"
+    ". logo titre titre titre ."
     
-    "vide-left reference reference reference reference vide-right"
+    ". reference reference reference reference ."
     
-    "vide-left salarie salarie salarie salarie vide-right"
+    ". salarie salarie salarie salarie."
     
-    "vide-left information information information information vide-right"
+    ". information information information information ."
     
-    "vide-left information information information  information  vide-right"
+    ". information information information  information  ."
     
-    "vide-left rdv rdv rdv rdv vide-right"
+    ". rdv rdv rdv rdv ."
     
-    "vide-left cancel cancel cancel cancel vide-right" 
+    ". cancel cancel cancel cancel ."
+
     ;
 }
 
@@ -27,14 +35,7 @@
     grid-area: logo;
     background-color: peru;
 }
-.vide-left {
-    grid-area: vide-left;
-    background-color: red;
-}
-.vide-right {
-    grid-area: vide-right;
-    background-color: yellow;
-}
+
 .titre {
     grid-area: titre;
     background-color: blue;
@@ -60,55 +61,49 @@
     background-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------------------
 
             @@@ HEADER 
 
 ---------------------------------------------*/
 /*
-* {
-    margin: 0;
-}
 
-body {
-    background-image: url(https://santraplus.fr/modeles_graphiques/img/bg_site.jpg);
-    background-color: white;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 header {
     font-family:Arial,sans-serif ; 
     border: black solid 1px;
