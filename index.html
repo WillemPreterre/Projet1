@@ -15,9 +15,7 @@
             <a href="https://www.santraplus.fr/" target="_blank"><img class="logo" src="img/logo_santraplus.png"
                     alt="logo-santraplus"></a>
         </div>
-
-        <div class="titre">
-            <span>Formulaire à adresser par courrier, fax ou e-mail :
+        <div class="titre"> <span>Formulaire à adresser par courrier, fax ou e-mail :
             </span>
             <span class="sous-titre">planning@santraplus.fr
             </span><br>
@@ -31,10 +29,9 @@
                 <h3>Attention ! Toute demande incomplète ne sera pas prise en compte</h3>
             </div>
         </div>
-
         <div class="box reference">
-
             <form action="" method="POST">
+
                 <h3>Vos références</h3>
                 <span>Raison sociale</span>
                 <label for="num-adherant">N° d'adhérent</label>
@@ -43,17 +40,15 @@
                     <label for="name-applicant">Nom du demandeur</label>
                     <input type="text" id="name-applicant" name="applicant-name" placeholder="...">
                 </p>
-                <div class="reference-bottom">
-                    <label for="tel-applicant">Tel</label>
-                    <input type="text" id="tel-applicant" name="tel-applicant" placeholder="...">
-                    <label for="fax-applicant">Fax</label>
-                    <input type="text" id="fax-applicant" name="fax-applicant" placeholder="...">
-                    <label for="mail-applicant">Mail</label>
-                    <input type="text" id="mail-applicant" name="mail-applicant" placeholder="...">
-
+                <label for="tel-applicant">Tel</label>
+                <input type="text" id="tel-applicant" name="tel-applicant" placeholder="...">
+                <label for="fax-applicant">Fax</label>
+                <input type="text" id="fax-applicant" name="fax-applicant" placeholder="...">
+                <label for="mail-applicant">Mail</label>
+                <input type="text" id="mail-applicant" name="mail-applicant" placeholder="...">
             </form>
-        </div>
 
+        </div>
         <div class="box salarie">
             <form action="" method="POST">
                 <h3>Le salarié</h3>
@@ -83,7 +78,6 @@
                 </p>
             </form>
         </div>
-
         <div class="box information">
             <div class="information-premiere">
                 <form action="" method="POST">
@@ -131,7 +125,8 @@
                         <input type="checkbox" id="sia-nuit" name="sia-result"> <label for="sia-handicape">Travail
                             handicapé</label>
                         <input type="checkbox" id="sia-handicape" name="sia-result"> <label
-                            for="sia-titulaire">Travailleur titulaire d'une pension d'invalidité</label>
+                            for="sia-titulaire">Travailleur
+                            titulaire d'une pension d'invalidité</label>
                         <input type="checkbox" id="sia-titulaire" name="sia-result"> <label for="sia-femme">Femme
                             enceinte, allaitante ou venant d'accoucher</label>
                         <input type="checkbox" id="sia-femme" name="sia-result">
@@ -182,50 +177,69 @@
                 </form>
             </div>
         </div>
-        <div class="box rdv">
-            <form action="" method="POST">
-                <input type="checkbox" id="rdv-maternité" name="rdv-maternité">
-                <label for="rdv-maternité">Reprise après un congé de maternité</label>
+    </div>
+    <div class="box rdv">a</div>
+    <div class="box cancel">a</div>
 
-                <input type="checkbox" id="rdv-maladie" name="rdv-maladie">
-                <label for="rdv-maladie">Reprise après une abscence pour cause de maladie professionnelle</label>
+    <!-- 
+    <div class="box salarie">
+        
 
-                <input type="checkbox" id="rdv-absence" name="rdv-absence">
-                <label for="rdv-absence">Reprise après une abscence de + 30 jours suite :</label>
+    <div class="box information">
+        
+    <div class="box rdv">
+        <form action="" method="POST">
+            <input type="checkbox" id="rdv-maternité" name="rdv-maternité">
+            <label for="rdv-maternité">Reprise après un congé de maternité</label>
 
-                <input type="radio" id="rdv-accident" name="rdv-accident">
-                <label for="rdv-accident">accident de travail</label>
+            <input type="checkbox" id="rdv-maladie" name="rdv-maladie">
+            <label for="rdv-maladie">Reprise après une abscence pour cause de maladie professionnelle</label>
 
-                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
-                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
-                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
-                <label for="rdv-arretmaladie">arrêt maladie</label>
+            <input type="checkbox" id="rdv-absence" name="rdv-absence">
+            <label for="rdv-absence">Reprise après une abscence de + 30 jours suite :</label>
 
-                <input type="text" id="rdv-reprise1" name="rdv-reprise1">
-                <label for="rdv-reprise1">Date de la reprise :<br>Durée de l'arrêt :</label>
+            <input type="radio" id="rdv-accident" name="rdv-accident">
+            <label for="rdv-accident">accident de travail</label>
 
-                <input type="text" id="rdv-reprise2" name="rdv-reprise2">
-                <label for="rdv-reprise2">Date de la reprise :<br>Durée de l'arrêt :</label>
+            <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+            <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+            <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+            <label for="rdv-arretmaladie">arrêt maladie</label>
 
-                <input type="text" id="rdv-reprise3" name="rdv-reprise3">
-                <label for="rdv-reprise3">Date de la reprise :<br>Durée de l'arrêt :</label>
+            <input type="text" id="rdv-reprise1" name="rdv-reprise1">
+            <label for="rdv-reprise1">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-                <input type="checkbox" id="rdv-examen" name="rdv-examen">
-                <label for="rdv-examen">Examen à la demande de l'employeur (merci de préciser le motif)</label>
-            </form>
-        </div>
-        <div class="box cancel">
-            <h3>Annuler ou reporter un rendez-vous :</h3>
-            
-            <label for="cancel-date"><span class="cancel-word">Date</span> du rendez-vous</label>
-            <input type="text" id="cancel-date" name="cancel-date">
+            <input type="text" id="rdv-reprise2" name="rdv-reprise2">
+            <label for="rdv-reprise2">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-            <label for="cancel-name"><span class="cancel-word">Nom du</span> médecin ou infirmière</label>
-            <input type="text" id="cancelnamee" name="cancel-name">
+            <input type="text" id="rdv-reprise3" name="rdv-reprise3">
+            <label for="rdv-reprise3">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-            <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
-            <input type="text" id="cancel-report" name="cancel-report">
-        </div>
+            <input type="checkbox" id="rdv-examen" name="rdv-examen">
+            <label for="rdv-examen">Examen à la demande de l'employeur (merci de préciser le motif)</label>
+        </form>
+    </div>
+    <div class="box cancel">
+        <h3>Annuler ou reporter un rendez-vous :</h3>
+
+        <label for="cancel-date"><span class="cancel-word">Date</span> du rendez-vous</label>
+        <input type="text" id="cancel-date" name="cancel-date">
+
+        <label for="cancel-name"><span class="cancel-word">Nom du</span> médecin ou infirmière</label>
+        <input type="text" id="cancelnamee" name="cancel-name">
+
+        <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
+        <input type="text" id="cancel-report" name="cancel-report">
+
+        <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
+        <input type="radio" id="cancel-report" name="cancel-report">
+
+        <label for="cancel-reportyes">Oui, Disponibilités :</label>
+        <input type="radio" id="cancel-reportyes" name="cancel-reportyes">
+
+        <label for="cancel-reportno">Non, motif :</label>
+        <input type="radio" id="cancel-reportno" name="cancel-reportno"> -->
+    </div>
     </div>
 </body>
 

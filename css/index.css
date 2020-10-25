@@ -8,11 +8,11 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 200vh;
     display: grid;
-    gap: 20px;
-    grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px ;
-    grid-template-rows: 1fr repeat(6, 1fr) ;
+    grid-gap: 20px;
+    grid-template-columns: 100px repeat(4,auto) 100px ;
+    grid-template-rows: repeat(7, auto) ;
     grid-template-areas: 
     ". logo titre titre titre ."
     
@@ -38,7 +38,7 @@ body {
 
 .titre {
     grid-area: titre;
-    background-color: blue;
+    background: red ;
 }
 .reference {
     grid-area: reference;
@@ -66,49 +66,55 @@ body {
             @@@ HEADER 
 
 ---------------------------------------------*/
-/*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-header {
-    font-family:Arial,sans-serif ; 
-    border: black solid 1px;
-    height: 130px;
+/*.container {
+    margin: 40px;
 }
+
+.titre {
+    font-family:Arial,sans-serif ; 
+    line-height: 55px;
+    height: 130px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 
 .header-site {
     position: relative;
