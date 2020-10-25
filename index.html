@@ -177,69 +177,61 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="box rdv">a</div>
-    <div class="box cancel">a</div>
 
-    <!-- 
-    <div class="box salarie">
-        
+        <div class="box rdv">
+            <form action="" method="POST">
+                <input type="checkbox" id="rdv-maternité" name="rdv-maternité">
+                <label for="rdv-maternité">Reprise après un congé de maternité</label>
 
-    <div class="box information">
-        
-    <div class="box rdv">
-        <form action="" method="POST">
-            <input type="checkbox" id="rdv-maternité" name="rdv-maternité">
-            <label for="rdv-maternité">Reprise après un congé de maternité</label>
+                <input type="checkbox" id="rdv-maladie" name="rdv-maladie">
+                <label for="rdv-maladie">Reprise après une abscence pour cause de maladie professionnelle</label>
 
-            <input type="checkbox" id="rdv-maladie" name="rdv-maladie">
-            <label for="rdv-maladie">Reprise après une abscence pour cause de maladie professionnelle</label>
+                <input type="checkbox" id="rdv-absence" name="rdv-absence">
+                <label for="rdv-absence">Reprise après une abscence de + 30 jours suite :</label>
 
-            <input type="checkbox" id="rdv-absence" name="rdv-absence">
-            <label for="rdv-absence">Reprise après une abscence de + 30 jours suite :</label>
+                <input type="radio" id="rdv-accident" name="rdv-accident">
+                <label for="rdv-accident">accident de travail</label>
 
-            <input type="radio" id="rdv-accident" name="rdv-accident">
-            <label for="rdv-accident">accident de travail</label>
+                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+                <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
+                <label for="rdv-arretmaladie">arrêt maladie</label>
 
-            <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
-            <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
-            <input type="radio" id="rdv-arretmaladie" name="rdv-accident">
-            <label for="rdv-arretmaladie">arrêt maladie</label>
+                <input type="text" id="rdv-reprise1" name="rdv-reprise1">
+                <label for="rdv-reprise1">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-            <input type="text" id="rdv-reprise1" name="rdv-reprise1">
-            <label for="rdv-reprise1">Date de la reprise :<br>Durée de l'arrêt :</label>
+                <input type="text" id="rdv-reprise2" name="rdv-reprise2">
+                <label for="rdv-reprise2">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-            <input type="text" id="rdv-reprise2" name="rdv-reprise2">
-            <label for="rdv-reprise2">Date de la reprise :<br>Durée de l'arrêt :</label>
+                <input type="text" id="rdv-reprise3" name="rdv-reprise3">
+                <label for="rdv-reprise3">Date de la reprise :<br>Durée de l'arrêt :</label>
 
-            <input type="text" id="rdv-reprise3" name="rdv-reprise3">
-            <label for="rdv-reprise3">Date de la reprise :<br>Durée de l'arrêt :</label>
+                <input type="checkbox" id="rdv-examen" name="rdv-examen">
+                <label for="rdv-examen">Examen à la demande de l'employeur (merci de préciser le motif)</label>
+            </form>
+        </div>
 
-            <input type="checkbox" id="rdv-examen" name="rdv-examen">
-            <label for="rdv-examen">Examen à la demande de l'employeur (merci de préciser le motif)</label>
-        </form>
-    </div>
-    <div class="box cancel">
-        <h3>Annuler ou reporter un rendez-vous :</h3>
+        <div class="box cancel">
+            <h3>Annuler ou reporter un rendez-vous :</h3>
 
-        <label for="cancel-date"><span class="cancel-word">Date</span> du rendez-vous</label>
-        <input type="text" id="cancel-date" name="cancel-date">
+            <label for="cancel-date"><span class="cancel-word">Date</span> du rendez-vous</label>
+            <input type="text" id="cancel-date" name="cancel-date">
 
-        <label for="cancel-name"><span class="cancel-word">Nom du</span> médecin ou infirmière</label>
-        <input type="text" id="cancelnamee" name="cancel-name">
+            <label for="cancel-name"><span class="cancel-word">Nom du</span> médecin ou infirmière</label>
+            <input type="text" id="cancelnamee" name="cancel-name">
 
-        <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
-        <input type="text" id="cancel-report" name="cancel-report">
+            <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
+            <input type="text" id="cancel-report" name="cancel-report">
 
-        <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
-        <input type="radio" id="cancel-report" name="cancel-report">
+            <label for="cancel-report"><span class="cancel-word">Reporter</span> le rendez-vous</label>
+            <input type="radio" id="cancel-report" name="cancel-report">
 
-        <label for="cancel-reportyes">Oui, Disponibilités :</label>
-        <input type="radio" id="cancel-reportyes" name="cancel-reportyes">
+            <label for="cancel-reportyes">Oui, Disponibilités :</label>
+            <input type="radio" id="cancel-reportyes" name="cancel-reportyes">
 
-        <label for="cancel-reportno">Non, motif :</label>
-        <input type="radio" id="cancel-reportno" name="cancel-reportno"> -->
-    </div>
+            <label for="cancel-reportno">Non, motif :</label>
+            <input type="radio" id="cancel-reportno" name="cancel-reportno">
+        </div>
     </div>
 </body>
 
