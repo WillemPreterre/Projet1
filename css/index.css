@@ -34,32 +34,34 @@ body {
 .logo {
     grid-area: logo;
     margin-top: 50px;
-    width: auto;
-
 }
 
 .titre {
     grid-area: titre;
 }
+
 .reference {
     grid-area: reference;
-    background-color: violet;
 }
+
 .salarie {
     grid-area: salarie;
-    background-color: pink;
 }
+
 .information {
     grid-area: information;
-    background-color: green;
 }
+
 .rdv {
     grid-area: rdv;
-    background-color: aqua;
 }
+
 .cancel {
     grid-area: cancel;
-    background-color: grey;
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 /* --------------------------------------------
@@ -68,10 +70,9 @@ body {
 
 ---------------------------------------------*/
 
-
 .titre {
     font-family:Arial,sans-serif ; 
-    line-height: 40px;
+    line-height: 37px;
     height: 130px;
 } 
 
@@ -82,209 +83,142 @@ body {
 }
 
 .titre .sous-titre {
-    line-height: 40px;
+    line-height: 32px;
 }
 
 .titre h3 {
-    font-size: 16px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-.header-site {
-    position: relative;
-    line-height: 40px;
-}
-
-.header-all {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    left: 650px ;
-    margin: 30px;
-}
-
-
-.header-top {
-    font-size: 25px;
-    text-transform: capitalize ;
-    font-weight: 550;
-    color: rgb(0, 146, 182);
-}
-
-.start {
-    font-weight: 550;
-    text-transform: capitalize;
-    color: rgb(0, 146, 182);
-
-}
-
-.logo {
-    position: absolute;
-    left: 250px;
-    margin: 45px;
-
-}
-.reference,
-.salarie {
-    padding: 10px;
-}
-/* -----------------------------------
-
-        @@@Main
-
------------------------------------ */
-/*.reference {
-    border: solid black 1px;
-    height: 200px   ;
-    margin-top: 70px;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: rgba(238, 237, 237, 0.986);
-    line-height: 40px;
-    line-height: 50px;
-}
-
-label[for="num-adherant"] {
-    margin-left: 680px;
-}
-
-label[for="tel-applicant"] {
-    margin-left: 105px;
-}
-
-label[for="fax-applicant"] {
-    margin-left: 200px;
-
-}
-label[for="mail-applicant"] {
-    margin-left: 150px;
-}
-#name-applicant {
-    border-color: 1px solid  white;
-}
-
-/* -------------------------------
-        @@@ Main 2eme partie
-    ---------------------------*/
-/*
-.attention {
-    position: absolute;
+    font-size: 18px;
     color: red;
-    text-decoration: underline 2px;
-    font-weight: bold;
-    text-align: center;
-    left:700px;
-    font-size: 20px;
-    top: 430px;
-    line-height: 50px;
 }
+
+
+/* --------------------------------------------
+
+            @@@ Reference 
+
+---------------------------------------------*/
+
+.reference {
+    padding: 10px;
+    line-height: 38px;
+    border: 1px solid black;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+label[for="mail-applicant"] {
+    padding-left: 50px;
+}
+label[for="fax-applicant"] {
+    padding-left: 50px;
+}
+
+/* --------------------------------------------
+
+            @@@ salarié 
+
+---------------------------------------------*/
 
 .salarie {
-    border: black solid 1px;
-    margin-top: 70px;
-    margin-right: 200px;
-    margin-left: 200px;
-    height: 230px;
-    line-height: 49px;
-    background-color: rgba(238, 237, 237, 0.986);
+    padding: 10px;
+    line-height: 38px;
+    border: 1px solid black;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(240, 240, 240);
 }
 
-label[for="first-name"]{
-    margin-left: 250px ;
-
-}
-label[for="birthday"] {
-    margin-left: 185px ;
-
-}
+label[for="birthday"],
+label[for="first-name"],
 label[for="code-pcs"] {
-
-    margin-left: 235px ;
+    padding-left: 300px;
 }
 
-label[for="marital-name"] {
-    margin-left:  35px;
-}
-label[for="workspace"] {
-    margin-left: 15px;
-}
+/* --------------------------------------------
 
+            @@@ Information
 
-/*---------------------------------------
+---------------------------------------------*/
 
-   @@@ Main 3eme partie 
-
-   --------------------------------------*/
-
-/* main a revoir deux main 
-
-si result est nécessaire sur tous les suivi individuel simple*/
-/*
-.information {
-    border: black 1px solid;
-    margin-left: 200px;
-    margin-top: 70px;
-    margin-right: 200px;
-    height: 500px;
-    line-height: 49px;
-    background-color: rgba(238, 237, 237, 0.986);
-}
 
 .information {
     padding: 10px;
+    line-height: 38px;
+    border: 1px solid black;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(240, 240, 240);
 }
 
-
-.information-premiere {
-    border: red 1px solid;
-
-
+label[for="contrat-type"] {
+    padding-left: 130px;
 }
-.information-premiere span:nth-child(2) {
-    margin-left: 100px;
+
+label[for="choice-employeyes"],
+label[for="choice-employeno"] {
+    padding-left: 120px;
 }
-.information-premiere span:nth-child(1) {
-    color: rgb(0, 146, 182);
-    font-size: 22px;
+
+.information .span-center {
     text-align: center;
+}
+.span-color {
+    color: rgb(57, 126, 190);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.information-title {
+    font-size: 20px;
+}
+
+.suivi {
+    padding-top: 30px;
+}
+/* --------------------------------------------
+
+            @@@ Rdv 
+
+---------------------------------------------*/
+
+.rdv {
+    padding: 10px;
+    line-height: 38px;
+    border: 1px solid black;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.absence {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* --------------------------------------------
+
+            @@@ Cancel
+
+---------------------------------------------*/
+
+.cancel {
+    padding: 10px;
+    line-height: 38px;
+    border: 1px solid black;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.information-deuxieme h3 {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.cancel-word {
+    font-weight: bold;
+}
+
+label[for="cancel-name"] {
+    padding-left: 150px;
 }
